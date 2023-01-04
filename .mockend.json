@@ -1,20 +1,11 @@
 {
-  "Autorizacionpura": {
+  "Post": {
     "_": { "items": 20 },
-    "Autorizacion": { "regexp": "[1-9]{6}" },
-    "Bin": { "int": [555543,444444,555542,554063,438824,554074] },
-    "Cuotas": { "int": [1,3,4,6,7,8,9,11,12,13,16,18,25,32] },
-    "DebitoAutomatico": { "boolean": {} },
-    "Estado": { "string": ["APROBADA", "RECHAZADA", "ANULADA"] },
-    "Fecha": { "dateTime": { "min": "2022-01-01T00:00:00Z", "max": "2022-12-31T23:59:59Z" } },
-    "Marca": { "int": { "min": 3, "max": 5 } },
-    "ModoEntrada": { "int": [1,2,5,7,8,10,80,81,90] },
-    "Moneda": 1,
-    "Monto": { "regexp": "[1-9]{2,5}.[0-9]{1,2}" },
-    "NroAdicional": { "boolean": {} },
-    "NroComercio": { "regexp": "[1-9]{7}" },
-    "NroCuentaSocio": { "regexp": "[1-9]{7}" },
-    "NroTarjeta": "regexp": "[1-9]{16}",
-    "TipoTransaccion": { "int": [1,2,5,13,15,16,18] }
+    "title": { "string": {} },
+    "comments": { "hasMany": "Comment" }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": { "belongsTo": "Post" }
   }
 }
