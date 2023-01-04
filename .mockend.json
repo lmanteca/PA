@@ -1,7 +1,6 @@
 {
   "Post": {
     "_": { "items": 20 },
-    "Autorizacion": { "regexp": "[1-9]{6}" },
     "title": { "string": {} },
     "comments": { "hasMany": "Comment" }
   },
