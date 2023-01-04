@@ -7,9 +7,5 @@
   "Comment": {
     "body": { "string": {} },
     "post": { "belongsTo": "Post" }
-  },
-  "Autor": {
-    "_": { "items": 20 },
-    "title": { "string": {} }
   }
 }
